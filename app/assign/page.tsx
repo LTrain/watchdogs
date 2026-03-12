@@ -898,8 +898,7 @@ function replaceUrl(p: Params, extra?: { view?: ViewMode; scout?: number }) {
                     const team = a.scoutToTeam[si];
                     return team ? { matchNumber: matches[mi].matchNumber, time: matches[mi].time, team } : null;
                   })
-                  .filter((x): x is { matchNumber: number; time?: number | null; team: number } => x !== null);
-
+                  .filter((x): x is { matchNumber: number; time: number | null | undefined; team: number } => x !== null);
                 return (
                   <div key={si} className="card" style={{ padding: 12, display: "grid", gap: 10 }}>
                     <div style={{ display: "flex", alignItems: "center", justifyContent: "space-between", gap: 10 }}>
