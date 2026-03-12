@@ -46,20 +46,20 @@ export function parseParams(sp: URLSearchParams): Params {
       ? scoutNamesRaw.split("|").map(decodeURIComponent)
       : undefined;
 
-  return {
-    event,
-    scouts,
-    obs,
-    spread,
-    cap,
-    exclude,
-    seed,
-    maxFirstPct,
-    minLastPct,
-    minSpanPct,
-    showAll,
-    scoutNames,
-  };
+return {
+  event,
+  scouts,
+  obs,
+  spread,
+  cap,
+  excludeTeam: exclude > 0 ? exclude : undefined,
+  seed,
+  maxFirstPct,
+  minLastPct,
+  minSpanPct,
+  showAll,
+  scoutNames,
+};
 }
 
 export function paramsToSearchParams(p: Params) {
