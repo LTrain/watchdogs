@@ -166,6 +166,11 @@ export default function AboutPage() {
     Team 8280, K9.0 Robotics, is a Detroit-based FIRST Robotics Competition team at The School at Marygrove that was relaunched just three years ago and has quickly become a driving force in the local robotics community, working to change the culture of STEM in Detroit while helping raise the competitive performance and collaboration of FIRST teams across the city.</p>
   </details>
 
+      <details>
+    <summary>Why did you roll your own vs using tool X?</summary>
+    <p>
+    We weren't aware of tool x. </p></details>
+
 </div>
     </main>
   );
