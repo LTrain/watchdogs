@@ -1,4 +1,5 @@
 import "./globals.css";
+import ReadmeDialog from "./components/ReadmeDialog";
 
 export const metadata = {
   title: "Watchdogs",
@@ -20,8 +21,9 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
             </a>
 
             <nav className="nav">
-              <a href="/assign">Assignments</a>
-              <a href="/about">About</a>
+<a href="/assign" className="navLink">Assignments</a>
+<a href="/about" className="navLink">About</a>
+              <ReadmeDialog />
             </nav></div>
         </header>
 
